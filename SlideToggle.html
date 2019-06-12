@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>jQuery slideToggle() method</title>
+  
+  <style type="text/css"> 
+    #slide, #click {
+      font-family: Verdana;
+      font-size: 14px;
+      background: #CCCCCC;
+      border: 1px solid #c3c3c3;
+      text-align: center;
+    }
+    #slide {
+      display: none;
+      height: 60px;
+    }
+  </style>
+</head>
+<body> 
+  <div id="slide">
+    <p>This paragraph text represent slide panel text and it's running slide effect.</p>
+  </div>
+  <p id="click">Click me to slide toggle</p>
+</body> 
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+<script>
+    $(document).ready(function() {
+      $("#click").click(function(){
+        $("#slide").slideToggle("slow");
+      });
+    });
+  </script>
+</html>

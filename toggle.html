@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>jQuery toggle() method</title>
+
+  
+</head>
+<body> 
+  <button id="toggle">Hide/Show</button> 
+  <p style="background-color:#99FFFF;font-size:16px;font-family:Verdana;">Paragraph will hide after click</p>
+</body> 
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+<script>
+    $(document).ready(function() {
+      $("#toggle").click(function () {
+        $("p").toggle();
+      }); 
+    });
+  </script>
+</html>

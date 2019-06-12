@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>jQuery fadeTo() method</title>
+
+
+  <style type="text/css"> 
+    div {
+      background: #FC5E5E;
+      font-family: arial;
+      padding: 10px;
+    }
+  </style>
+</head>
+<body>
+  <button id="fadeTo">fadeTo (3 Seconds)</button>
+  <br /><br />
+  <div>This element represent fade in/out effect.</div>
+</body> 
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+  <script>
+    $(document).ready(function() {
+      $("#fadeTo").click(function(){
+        $("div").fadeTo(3000, 0.3);
+      });
+    });
+  </script>
+</html>

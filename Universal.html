@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>jQuery hide all elements</title>
+  
+  
+</head>
+<body>
+  <p>First paragraph start here...</p>
+  <p>Second paragraph start here...</p>
+  <button>Click here to hide above all paragraph</button>
+</body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+<script>
+    $(document).ready(function() {
+      $("button").click(function(){
+        $("*").hide();
+      });
+    });
+  </script>
+</html>

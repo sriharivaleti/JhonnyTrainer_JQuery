@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>jQuery hide p#div1 element</title>
+  
+  
+</head>
+<body>
+  <p id="div1">First paragraph start here...</p>
+  <button>Click here to hide p#div1 element</button>
+</body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+<script>
+    $(document).ready(function() {
+      $("button").click(function(){
+        $("#div1").hide();
+      });
+    });
+  </script>
+</html>
